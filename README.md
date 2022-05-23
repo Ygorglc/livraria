@@ -1,3 +1,4 @@
 # livraria
 
-Api de gerenciamento de livros da SEAP.# livraria
+Api de gerenciamento de livros de uma livraria.
+
