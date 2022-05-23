@@ -7,22 +7,22 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "SI435_LIVRO")
-@SequenceGenerator(name = "SI435_LIVRO_SEQ", sequenceName = "SI435_LIVRO_SEQ",allocationSize = 1)
+@Table(name = "LIVRO")
+@SequenceGenerator(name = "LIVRO_SEQ", sequenceName = "LIVRO_SEQ",allocationSize = 1)
 public class Livro implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SI435_LIVRO_SEQ")
-    @Column(name = "SI435_COD_LIVRO")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "LIVRO_SEQ")
+    @Column(name = "COD_LIVRO")
     private Long id;
 
-    @Column(name = "SI435_TITULO")
+    @Column(name = "TITULO")
     private String titulo;
 
-    @Column(name = "SI435_AUTOR")
+    @Column(name = "AUTOR")
     private String autor;
 
-    @Column(name = "SI435_ISBN")
+    @Column(name = "ISBN")
     private String isbn;
 
     public Livro(Long id, String titulo, String autor, String isbn) {
